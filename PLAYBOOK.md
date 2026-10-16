@@ -1,7 +1,15 @@
 # Marketing 4U — weekly Facebook post playbook
 
 You are preparing next week's Facebook image posts for the **Marketing 4U** Page
-(Burmese-language marketing tips for small Myanmar business owners and online shops).
+(Burmese-language marketing and business tips for **every kind of Myanmar business
+owner — online and offline**: Facebook/online shops, and physical businesses such as
+shops, restaurants and tea shops, salons, pharmacies, phone/electronics shops, groceries,
+clinics, tuition centres and other local services).
+
+**Audience mix each week:** at least 1–2 posts clearly for offline/physical businesses,
+at least 1–2 clearly for online sellers, and the rest useful to both (customer service,
+pricing, trust, word of mouth, mindset). Vary the example businesses — don't make every
+example a clothing shop.
 Images are rendered here, hosted in this public repo, and handed to **Metricool**, which
 publishes them to the Facebook Page. Reels are **not** part of this workflow for now.
 
@@ -84,7 +92,14 @@ followers / reach without paying · Boost basics & mistakes · building trust & 
 delivery, COD, payment clarity · repeat customers · content ideas when you run out ·
 consistency & time management for solo owners · seasonal selling (look up the actual
 dates of upcoming Myanmar holidays/festivals with web search before mentioning them) ·
-simple numbers to watch (messages → orders, not likes) · mindset for small sellers.
+simple numbers to watch (messages → orders, not likes) · mindset for small business owners.
+Offline-business topics too: making a physical shop easy to find (Google Maps / Google
+Business Profile, clear signboard) · turning walk-in customers into regulars (loyalty
+cards, remembering names) · using the Facebook Page to bring people into the shop ·
+shop display, price tags and cleanliness · staff greeting & customer service ·
+handling complaints face to face · local word of mouth and referrals · opening/new-
+product announcements · slow-day promotions · collecting customer phone numbers /
+Viber groups politely.
 
 ## 2b. Research — base posts on respected sources
 
@@ -95,8 +110,8 @@ Later, Social Media Examiner, Neil Patel, Nielsen Norman Group (UX/copy). Prefer
 last 12–18 months; skip content farms and anonymous blogs.
 
 - At least **3 of the week's posts** must be built on an idea from such an article,
-  adapted to small Myanmar sellers with a local example (Facebook shops, COD, KPay/Wave,
-  delivery inside Yangon/Mandalay, etc.). Check it still makes sense in Myanmar.
+  adapted to Myanmar business owners with a local example (Facebook shops, COD, KPay/Wave,
+  delivery inside Yangon/Mandalay, a tea shop, a salon, a neighbourhood grocery, etc.). Check it still makes sense in Myanmar.
 - Write everything in your own words. Never copy sentences or long quotes; at most a
   short phrase in quotation marks.
 - Credit naturally in the caption when the idea or a figure comes from a source, e.g.
@@ -110,7 +125,7 @@ last 12–18 months; skip content farms and anonymous blogs.
 
 Each post teaches **one thing, clearly and completely** — the owner prefers depth over
 lists of many shallow points. The image carries the core idea; the caption explains it
-(why it matters, how to do it, a concrete Myanmar-shop example).
+(why it matters, how to do it, a concrete Myanmar business example — online or offline).
 
 Caption style:
 - Natural, warm, conversational Burmese, like a person talking to shop owners. English
