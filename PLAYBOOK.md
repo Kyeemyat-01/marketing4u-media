@@ -7,8 +7,9 @@ publishes them to the Facebook Page. Reels are **not** part of this workflow for
 
 ## Settings (the owner may edit these)
 
-- MODE: `draft` — create Metricool posts with `draft: true`, so the owner presses
-  "Schedule" in Metricool. Change to `schedule` to publish automatically.
+- MODE: `schedule` — create Metricool posts with `draft: false` so they publish
+  automatically at their time. (The owner asked for this; `draft` would make them
+  press Schedule themselves.)
 - POSTS_PER_MONTH: 20 (Metricool free plan limit — never exceed it)
 - Metricool brand: "Marketing 4U", blogId `7456020`, brand timezone `Asia/Tokyo`.
   Always confirm with `getBrandSettings` before scheduling.
@@ -71,6 +72,26 @@ consistency & time management for solo owners · seasonal selling (look up the a
 dates of upcoming Myanmar holidays/festivals with web search before mentioning them) ·
 simple numbers to watch (messages → orders, not likes) · mindset for small sellers.
 
+## 2b. Research — base posts on respected sources
+
+Every run, before writing, search the web (WebSearch, 3–6 queries; WebFetch to read)
+for recent, well-regarded articles on the topics you plan: e.g. Meta for Business /
+Facebook Business Help Center, HubSpot, Buffer, Hootsuite, Sprout Social, Shopify blog,
+Later, Social Media Examiner, Neil Patel, Nielsen Norman Group (UX/copy). Prefer the
+last 12–18 months; skip content farms and anonymous blogs.
+
+- At least **3 of the week's posts** must be built on an idea from such an article,
+  adapted to small Myanmar sellers with a local example (Facebook shops, COD, KPay/Wave,
+  delivery inside Yangon/Mandalay, etc.). Check it still makes sense in Myanmar.
+- Write everything in your own words. Never copy sentences or long quotes; at most a
+  short phrase in quotation marks.
+- Credit naturally in the caption when the idea or a figure comes from a source, e.g.
+  "HubSpot ရဲ့ ဆောင်းပါးတစ်ခုမှာ …" or "Meta ရဲ့ Business လမ်းညွှန်မှာ …". A link is optional.
+- Numbers only when the source itself states them — then name the source (and year).
+  If unsure, leave the number out. Never present a source's claim as your own study.
+- Record it in the log as `"source": {"title": "…", "publisher": "…", "url": "…"}`
+  (`null` for posts not based on a source).
+
 ## 3. Write each post
 
 Each post teaches **one thing, clearly and completely** — the owner prefers depth over
@@ -123,7 +144,7 @@ Existing blog articles (for the weekly blog pointer):
    — confirm with `curl -sI` that it returns 200 before using it.
 2. For each post call `createScheduledPost` with blogId `7456020`, `providers`
    `[{"network":"facebook"}]`, `facebookData {"type":"POST"}`, `media` [raw URL],
-   `text` = caption, `autoPublish: true`, `draft: true` if MODE is `draft`,
+   `text` = caption, `autoPublish: true`, `draft` = `false` in schedule mode (`true` in draft mode),
    `publicationDate {dateTime, timezone:"Asia/Tokyo"}` and the matching `date`.
 3. If Metricool refuses (e.g. monthly limit), stop scheduling, keep what succeeded,
    and report it.
@@ -133,9 +154,18 @@ Existing blog articles (for the weekly blog pointer):
 1. Append one entry per scheduled post to `posts/log.json`:
    `{"date":"YYYY-MM-DD","timeMMT":"HH:MM","format":"…","template":"…","theme":"…","size":"…",
    "topic":"short English topic","firstLine":"caption first line","blogLink":true|false,
-   "followCta":true|false,"image":"YYYY-MM/<name>.jpg","metricoolUuid":"…","status":"draft"|"scheduled"}`
+   "followCta":true|false,"image":"YYYY-MM/<name>.jpg","metricoolUuid":"…","status":"draft"|"scheduled","source":{…}|null}`
    Commit and push.
-2. Finish with a short Burmese summary for the owner: a table of date, time (Myanmar),
-   format and topic, the Metricool planner link for each post, and — in draft mode — a
-   reminder to open each draft in Metricool and press Schedule. Mention anything that
-   failed.
+2. **Telegram** — if the task prompt gives a Telegram bot token and chat id, send the
+   owner a copy of every post right after it is scheduled. Never write the token or
+   chat id into any file, commit, log or Metricool post. For each post, with curl and
+   `--data-urlencode`:
+   - `sendPhoto` to `https://api.telegram.org/bot<TOKEN>/sendPhoto` with `chat_id`,
+     `photo` = the raw GitHub image URL and `caption` = "📅 <Myanmar date & time> · <format>"
+     (+ source publisher if any);
+   - then `sendMessage` with the full Facebook caption as `text` (split if > 4000 chars).
+   At the end send one `sendMessage` summary: the week's table (date, time, topic) and
+   anything that failed. If Telegram returns an error, report it but do not stop the run.
+3. Finish with a short Burmese summary for the owner: a table of date, time (Myanmar),
+   format, topic and source, the Metricool planner link for each post, and — in draft
+   mode only — a reminder to press Schedule in Metricool. Mention anything that failed.
