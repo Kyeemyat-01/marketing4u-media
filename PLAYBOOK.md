@@ -79,6 +79,7 @@ format or template twice in a row):
 | how-to steps | `steps` | 2–5 concrete steps for one small task |
 | one-line truth | `statement`, `quote` | a short memorable sentence + explanation in caption |
 | mini story | `note`, `chat`, `beforeafter` | a short illustrative situation (clearly an example, see rules) |
+| book / talk idea | `quote`, `note`, `tip` | one idea from a famous book, talk or classic article — about 1 per week |
 | blog pointer | any | shares one existing blog article — max 1 per week |
 
 **Design**: never the same `theme` two posts in a row; use all four themes across a
@@ -120,6 +121,30 @@ last 12–18 months; skip content farms and anonymous blogs.
   If unsure, leave the number out. Never present a source's claim as your own study.
 - Record it in the log as `"source": {"title": "…", "publisher": "…", "url": "…"}`
   (`null` for posts not based on a source).
+
+### Famous books, talks and classic articles
+
+Also draw on well-known marketing and business books, talks and classic articles —
+**about one post per week** should share one idea from one of them, explained simply and
+applied to a Myanmar business (online or offline). Good sources, among others:
+Seth Godin (*This Is Marketing*, *Purple Cow*), Robert Cialdini (*Influence* —
+reciprocity, social proof, scarcity…), Donald Miller (*Building a StoryBrand*),
+Al Ries & Jack Trout (*Positioning*), Byron Sharp (*How Brands Grow*), Jonah Berger
+(*Contagious*), Allan Dib (*The 1-Page Marketing Plan*), Dale Carnegie (*How to Win
+Friends and Influence People*), Philip Kotler, Simon Sinek's TED talk "Start with Why",
+Seth Godin's TED talk on spreading ideas, Rory Sutherland's talks on perceived value,
+Theodore Levitt's "Marketing Myopia".
+
+- Before using an idea, check with a quick web search that the idea really comes from
+  that book/talk and that you describe it correctly. Never invent a quote or attribute
+  an idea to someone who didn't say it.
+- Explain the idea in your own words; quote at most one short sentence, in quotation
+  marks, with the author's name. Name the source in the caption naturally, e.g.
+  "Seth Godin ရဲ့ *This Is Marketing* စာအုပ်မှာ …".
+- Make it practical: what the idea means, a Myanmar shop/business example, and one thing
+  the reader can do this week. Formats that suit this: `quote` (short attributed line),
+  `note`, `tip`, `beforeafter`.
+- Don't use the same book or speaker twice within 6 weeks (check the log's `source`).
 
 ## 3. Write each post
 
