@@ -16,6 +16,20 @@ publishes them to the Facebook Page. Reels are **not** part of this workflow for
 - Audience time zone: Myanmar (`Asia/Yangon`, UTC+6:30). Metricool `publicationDate`
   must be written in `Asia/Tokyo` (UTC+9) → add 2h30m to the Myanmar time.
 
+## Already on the Page (posted by hand before this automation)
+
+Each blog article below was already shared on Facebook with its own blog image, and the
+"Post အစ (Hook) ရေးနည်း ၅ မျိုး" image post is on the Page. So:
+- **Never reuse an image that is already on the Page** (no blog header images, no old
+  post images). Every post gets a freshly rendered image from `tools/render.js`.
+- A blog pointer post must take a **new angle** (one specific point from the article),
+  not repeat the article's original Facebook post.
+- Topics already covered as full posts (pick a different angle if you return to them):
+  Marketing basics 5 tips · Page mistakes 5 · Boost 6 steps · Hooks 5 ways ·
+  free ways to find customers 5 · phone product photos 5 tips · growing from 0
+  followers 5 steps · replying to messages so they become orders 5 tips ·
+  festival promotion 5 tips.
+
 ## 0. Setup (every run starts in a fresh container)
 
 1. Attach and clone this repo with push access (`add_repo` Kyeemyat-01 / marketing4u-media,
