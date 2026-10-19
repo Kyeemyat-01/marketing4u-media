@@ -130,7 +130,7 @@ async function render(specs, outFn){
   const b = await chromium.launch(); const results=[];
   for (const [i,spec] of specs.entries()){
     const [W,H] = SIZES[spec.size]||SIZES.portrait;
-    const p = await b.newPage({viewport:{width:W,height:H},deviceScaleFactor:2});
+    const p = await b.newPage({viewport:{width:W,height:H},deviceScaleFactor:Math.min(2,2048/Math.max(W,H))});  // Facebook max 2048px
     const tmp=path.join(require('os').tmpdir(),'m4u-render-'+process.pid+'-'+i+'.html');fs.writeFileSync(tmp,page(spec));await p.goto('file://'+tmp,{waitUntil:'load'});
     await p.evaluate(()=>document.fonts.ready); await p.waitForTimeout(150);
     const fs_ = await p.evaluate(()=>fit());

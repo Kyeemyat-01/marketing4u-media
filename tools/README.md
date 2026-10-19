@@ -6,7 +6,7 @@ node render.js batch.json ../2026-10/       # array of specs -> one JPG per spec
 node render.js one.json out.jpg             # single spec
 ```
 
-Output: 2160×2700 (portrait) or 2160×2160 (square) JPG. The script prints the final
+Output: 1638×2048 (portrait) or 2048×2048 (square) JPG — Facebook's 2048px maximum. The script prints the final
 base font size per image; if it prints `WARNING: text too long`, shorten the text.
 
 ## Spec
