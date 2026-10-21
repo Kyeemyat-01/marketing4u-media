@@ -215,10 +215,11 @@ Existing blog articles (for the weekly blog pointer):
    chat id into any file, commit, log or Metricool post. For each post, with curl and
    `--data-urlencode`:
    - `sendPhoto` to `https://api.telegram.org/bot<TOKEN>/sendPhoto` with `chat_id`,
-     `photo` = the raw GitHub image URL and `caption` = "📅 <Myanmar date & time> · <format>"
+     `photo` = the raw GitHub image URL and `caption` = "📅 <date> · 🇲🇲 <Myanmar time> / 🇯🇵 <Japan time> · <format>"
+     (the owner lives in Japan, so always show both times, e.g. "🇲🇲 ည ၇:၄၅ / 🇯🇵 ည ၁၀:၁၅")
      (+ source publisher if any);
    - then `sendMessage` with the full Facebook caption as `text` (split if > 4000 chars).
-   At the end send one `sendMessage` summary: the week's table (date, time, topic) and
+   At the end send one `sendMessage` summary: the week's table (date, Myanmar time and Japan time, topic) and
    anything that failed. If Telegram returns an error, report it but do not stop the run.
 3. Finish with a short Burmese summary for the owner: a table of date, time (Myanmar),
    format, topic and source, the Metricool planner link for each post, and — in draft
