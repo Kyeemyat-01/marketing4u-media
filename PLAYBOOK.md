@@ -82,9 +82,34 @@ format or template twice in a row):
 | book / talk idea | `quote`, `note`, `tip` | one idea from a famous book, talk or classic article — about 1 per week |
 | blog pointer | any | shares one existing blog article — max 1 per week |
 
+**Multi-image posts:** 1–2 posts a week may carry 2–4 images (a mini carousel: e.g.
+cover image + one image per step, same theme across the set) for deeper how-to and
+money posts. Render each image as its own spec (`name` …-1, …-2), and pass all their
+raw URLs, in order, in Metricool's `media` list.
+
 **Design**: never the same `theme` two posts in a row; use all four themes across a
 week; mix `portrait` (most) and `square` (1–2 per week). Highlight only 1–2 phrases
 with `*…*`.
+
+**Owner's focus (from 2026-11-03): every week must include**
+- **At least 2 "how to post" posts** — practical posting craft on Facebook: how to
+  write a caption step by step, what to post on which day, how to use Reels, Stories,
+  Facebook Live, photo albums/carousels, pinned posts, Groups, the best time to post,
+  how to reply to comments so a post spreads, how to reuse one idea in 3 formats, how
+  to plan a week of posts in 30 minutes, what to post when you have nothing new.
+- **At least 2 "making more money" posts** — concrete, realistic ways a small business
+  earns more: raising average order value (bundles, add-ons, "buy 2" offers), repeat
+  sales and follow-ups, pre-orders, pricing and showing value, reducing returns and
+  COD cancellations, knowing your profit per item (not just sales), cutting wasted
+  spend, adding a related product or service, selling to past customers first, slow-
+  day offers, referral rewards, turning followers into buyers. Where relevant also
+  ways to earn from content itself (e.g. Facebook monetization programs) — but check
+  the current eligibility rules and Myanmar availability by web search before
+  mentioning them, and never promise income.
+- Money posts must be honest: no "get rich quick", no guaranteed earnings, no MLM,
+  gambling, crypto/forex schemes or anything illegal. Show the arithmetic with simple
+  example numbers clearly labelled as an example (e.g. "ဥပမာ အမြတ် ၅,၀၀၀ ကျပ်ရှိတဲ့
+  ပစ္စည်း…").
 
 **Topics** — rotate across these areas and never repeat a topic/angle used in the last
 60 log entries (check `topic`): writing captions & hooks · product photos with a phone ·
@@ -156,9 +181,21 @@ Caption style:
 - Natural, warm, conversational Burmese, like a person talking to shop owners. English
   only for words Myanmar sellers already use (Post, Page, Customer, Order, Boost,
   Message, Inbox, Comment, Delivery, COD, Size).
-- Vary length: some short (3–5 lines), most medium, the odd long one. Vary the first
-  line — not always a question, not always an emoji, never the same opener as the
-  previous post.
+- **Length (owner asked for longer, more meaningful posts, 2026-11-03):** most captions
+  should be **long and substantial — roughly 1,200–2,500 Burmese characters** (one
+  short post a week is fine for variety). Long does not mean padded: every paragraph
+  must add something the reader can use. Use this shape, in natural prose with short
+  paragraphs and the odd bullet list:
+  1. a first line that names a real problem or surprising truth;
+  2. why it matters — what it costs the business in money, customers or time;
+  3. the method, step by step, specific enough to do today;
+  4. a worked Myanmar example (online or offline), with simple example numbers when
+     money is involved;
+  5. the common mistake people make with it;
+  6. one action to take this week, and a genuine question to end.
+  Break the text into paragraphs of 1–3 sentences so it reads easily on a phone.
+- Vary the first line — not always a question, not always an emoji, never the same
+  opener as the previous post.
 - Emoji: 0–3 per caption. Hashtags: only on about half the posts, 1–3, e.g.
   `#Marketing4U` `#OnlineShop` `#FacebookMarketing`.
 - Calls to action: most posts end with a genuine question or simply end. Mention
