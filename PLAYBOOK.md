@@ -1,8 +1,8 @@
 # Marketing 4U — weekly Facebook post playbook
 
 You are preparing next week's Facebook image posts for the **Marketing 4U** Page
-(Burmese-language marketing and business tips for **every kind of Myanmar business
-owner — online and offline**: Facebook/online shops, and physical businesses such as
+(Burmese-language **marketing strategy and business-growth** content for **every kind of
+Myanmar business owner — online and offline**: Facebook/online shops, and physical businesses such as
 shops, restaurants and tea shops, salons, pharmacies, phone/electronics shops, groceries,
 clinics, tuition centres and other local services).
 
@@ -91,25 +91,46 @@ raw URLs, in order, in Metricool's `media` list.
 week; mix `portrait` (most) and `square` (1–2 per week). Highlight only 1–2 phrases
 with `*…*`.
 
-**Owner's focus (from 2026-11-03): every week must include**
-- **At least 2 "how to post" posts** — practical posting craft on Facebook: how to
-  write a caption step by step, what to post on which day, how to use Reels, Stories,
-  Facebook Live, photo albums/carousels, pinned posts, Groups, the best time to post,
-  how to reply to comments so a post spreads, how to reuse one idea in 3 formats, how
-  to plan a week of posts in 30 minutes, what to post when you have nothing new.
-- **At least 2 "making more money" posts** — concrete, realistic ways a small business
-  earns more: raising average order value (bundles, add-ons, "buy 2" offers), repeat
-  sales and follow-ups, pre-orders, pricing and showing value, reducing returns and
-  COD cancellations, knowing your profit per item (not just sales), cutting wasted
-  spend, adding a related product or service, selling to past customers first, slow-
-  day offers, referral rewards, turning followers into buyers. Where relevant also
-  ways to earn from content itself (e.g. Facebook monetization programs) — but check
-  the current eligibility rules and Myanmar availability by web search before
-  mentioning them, and never promise income.
-- Money posts must be honest: no "get rich quick", no guaranteed earnings, no MLM,
-  gambling, crypto/forex schemes or anything illegal. Show the arithmetic with simple
-  example numbers clearly labelled as an example (e.g. "ဥပမာ အမြတ် ၅,၀၀၀ ကျပ်ရှိတဲ့
-  ပစ္စည်း…").
+**Page identity (owner's decision, 2026-11-05): Marketing 4U is a MARKETING page, not a
+sales-tricks page.** Its job is to teach business owners how to *grow a business through
+marketing* — understanding customers, standing out, building a brand people remember,
+planning content and campaigns, building loyalty and word of mouth, and measuring what
+works. Short-term selling tactics (reply scripts for haggling, "buy 2" offers, COD
+tricks, closing a sale) are **at most 1 post per week**, and only when framed as part of
+a bigger marketing idea (e.g. retention, customer experience, positioning).
+
+**Every week (5 posts) should cover roughly this mix:**
+1. **Marketing fundamentals / strategy** — target customer & persona, positioning and
+   differentiation ("why you and not the shop next door"), value proposition, the
+   marketing funnel (awareness → interest → purchase → loyalty), choosing a niche,
+   competitor analysis, customer research (asking customers, simple surveys), pricing
+   as positioning, marketing plans and budgets for small businesses.
+2. **Brand building** — brand name, logo and visual consistency, brand voice, brand
+   story, what customers feel and remember, consistency across Page, shop, packaging
+   and staff, building trust and reputation over time.
+3. **Content & social media marketing ("how to post" as strategy)** — content pillars,
+   storytelling, a content calendar, Reels/Stories/Live/carousels and when each fits,
+   community building, Groups, Telegram/Viber channels, repurposing content, posting
+   rhythm, writing captions that build the brand, user-generated content.
+4. **Growth & loyalty** — word of mouth and referral programmes, partnerships and
+   collaborations with other local businesses, working with micro-influencers,
+   loyalty programmes, turning customers into fans, local/offline marketing (Google
+   Maps, signage, events, sampling), launching a new product or a new shop, seasonal
+   campaigns planned in advance.
+5. **Measuring & improving / ideas from the masters** — simple metrics (reach,
+   engagement, messages, conversion, repeat-customer rate, cost per customer, customer
+   lifetime value), testing two versions of something, reading Meta Insights, plus the
+   weekly idea from a famous marketing book, talk, or a **real, well-documented brand
+   case study** (verify facts with web search; name the brand and source; never invent
+   details).
+
+Business growth / "earning more" topics are welcome when they come *through
+marketing* — e.g. increasing customer lifetime value with loyalty, raising perceived
+value through branding, finding a more profitable customer segment. Keep them honest:
+no "get rich quick", no guaranteed earnings, no MLM, gambling, crypto/forex schemes or
+anything illegal; when using numbers, label them clearly as an example
+("ဥပမာ …"). If mentioning ways to earn from content (e.g. Facebook monetization), check
+current eligibility and Myanmar availability by web search first and never promise income.
 
 **Topics** — rotate across these areas and never repeat a topic/angle used in the last
 60 log entries (check `topic`): writing captions & hooks · product photos with a phone ·
