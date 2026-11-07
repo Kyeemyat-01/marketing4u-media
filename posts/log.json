@@ -286,5 +286,109 @@
       "publisher": "BrightLocal",
       "url": "https://www.brightlocal.com/learn/how-to-ask-for-reviews-for-your-business/"
     }
+  },
+  {
+    "date": "2026-11-09",
+    "timeMMT": "19:20",
+    "format": "one-line truth",
+    "template": "statement",
+    "theme": "navy",
+    "size": "square",
+    "topic": "positioning: one clear reason to choose you (value proposition), not just price",
+    "firstLine": "ဆိုင်တွေ အများကြီး ရှိတဲ့ လမ်းတစ်လမ်းမှာ Customer က ဘာကြောင့် သင့်ဆိုင်ကို ရွေးလဲ — ဒီမေးခွန်းကို ဆိုင်ရှင် အများစု တိတိကျကျ မဖြေနိုင်ကြဘူး။",
+    "blogLink": false,
+    "followCta": false,
+    "image": "2026-11/2026-11-09-why-this-shop.jpg",
+    "metricoolUuid": "-4966545782659134588",
+    "status": "scheduled",
+    "source": {
+      "title": "How to Write a Great Value Proposition",
+      "publisher": "HubSpot (Laura M. Browning, updated Feb 2026)",
+      "url": "https://blog.hubspot.com/marketing/write-value-proposition"
+    }
+  },
+  {
+    "date": "2026-11-11",
+    "timeMMT": "12:15",
+    "format": "how-to steps",
+    "template": "steps+checklist",
+    "theme": "orange",
+    "size": "portrait",
+    "topic": "online: repurpose one strong post into several formats",
+    "firstLine": "တင်စရာ မရှိလို့ ခေါင်းကိုက်နေတဲ့အချိန် — အဖြေက Post အသစ် ထပ်တွေးဖို့ မဟုတ်ဘဲ၊ ကောင်းခဲ့ပြီးသား Post ကို ပြန်သုံးဖို့ ဖြစ်နိုင်တယ်။",
+    "blogLink": false,
+    "followCta": false,
+    "image": "2026-11/2026-11-11-repurpose-1.jpg",
+    "images": [
+      "2026-11/2026-11-11-repurpose-1.jpg",
+      "2026-11/2026-11-11-repurpose-2.jpg"
+    ],
+    "metricoolUuid": "-5334996137619599545",
+    "status": "scheduled",
+    "source": {
+      "title": "The Complete Guide to Content Repurposing",
+      "publisher": "Buffer (Rochi Zalani, Jan 2026)",
+      "url": "https://buffer.com/resources/repurposing-content-guide/"
+    }
+  },
+  {
+    "date": "2026-11-12",
+    "timeMMT": "19:50",
+    "format": "book / talk idea",
+    "template": "tip",
+    "theme": "white",
+    "size": "portrait",
+    "topic": "brand building: distinctive brand assets used consistently (Byron Sharp)",
+    "firstLine": "လမ်းဘေးမှာ လက်ဖက်ရည်ဆိုင် ငါးဆိုင် တန်းစီနေရင် လူတွေ ဘယ်ဆိုင်ကို ဝင်လဲ — အများစုက အရင် သတိရတဲ့ ဆိုင်၊ မြင်လိုက်တာနဲ့ မှတ်မိတဲ့ ဆိုင်ကို ဝင်ကြတယ်။",
+    "blogLink": false,
+    "followCta": false,
+    "image": "2026-11/2026-11-12-distinctive-assets.jpg",
+    "metricoolUuid": "26249990373658074",
+    "status": "scheduled",
+    "source": {
+      "title": "How Brands Grow (Byron Sharp, 2010) — summary",
+      "publisher": "Byron Sharp (book) / Contagious Key Books",
+      "url": "https://contagious.com/iq/article/how-brands-grow"
+    }
+  },
+  {
+    "date": "2026-11-14",
+    "timeMMT": "12:35",
+    "format": "mini story",
+    "template": "note",
+    "theme": "cream",
+    "size": "portrait",
+    "topic": "offline: cross-promotion partnership with a neighbouring non-competing shop",
+    "firstLine": "ဆိုင်ဘေးက ဆိုင်ကို ပြိုင်ဘက်လို့ပဲ မြင်နေရင် Customer ရနိုင်တဲ့ လမ်းကြောင်း တစ်ခုကို လက်လွတ်နေတာ ဖြစ်နိုင်တယ်။",
+    "blogLink": true,
+    "followCta": false,
+    "image": "2026-11/2026-11-14-neighbour-partner.jpg",
+    "metricoolUuid": "4905661738786048797",
+    "status": "scheduled",
+    "source": {
+      "title": "Small Business Collaboration: 9 Ideas to Boost Sales",
+      "publisher": "Shopify blog (Desirae Odjick, Dec 2024)",
+      "url": "https://www.shopify.com/blog/collaboration-ideas-boost-small-business-sales"
+    }
+  },
+  {
+    "date": "2026-11-15",
+    "timeMMT": "19:10",
+    "format": "this or that",
+    "template": "versus",
+    "theme": "navy",
+    "size": "square",
+    "topic": "measure repeat-customer rate and customer lifetime value",
+    "firstLine": "Customer အသစ် ရှာတာကို ဆိုင်တိုင်း အာရုံစိုက်ကြတယ်။ ဝယ်ပြီးသွားတဲ့သူ ပြန်လာလား ဆိုတာကိုတော့ ရေတွက်တဲ့ ဆိုင် နည်းပါတယ်။",
+    "blogLink": false,
+    "followCta": true,
+    "image": "2026-11/2026-11-15-new-or-return.jpg",
+    "metricoolUuid": "2489667995503250470",
+    "status": "scheduled",
+    "source": {
+      "title": "Zero Defections: Quality Comes to Services (HBR, 1990)",
+      "publisher": "Reichheld & Sasser / Bain & Company",
+      "url": "https://www.bain.com/insights/zero-defections-quality-comes-to-services-harvard-business-review-hbr/"
+    }
   }
 ]
