@@ -390,5 +390,89 @@
       "publisher": "Reichheld & Sasser / Bain & Company",
       "url": "https://www.bain.com/insights/zero-defections-quality-comes-to-services-harvard-business-review-hbr/"
     }
+  },
+  {
+    "date": "2026-11-17",
+    "timeMMT": "12:40",
+    "format": "self-check",
+    "template": "checklist",
+    "theme": "orange",
+    "size": "portrait",
+    "topic": "marketing fundamentals: simple customer persona built from asking real customers",
+    "firstLine": "\"ကျွန်တော့် Customer က လူတိုင်းပါ\" — ဒီလို ဖြေတဲ့ ဆိုင်ရှင်တွေ အများကြီး ရှိပါတယ်။ ဒါပေမဲ့ လူတိုင်းကို ပြောနေတဲ့ Post က ဘယ်သူ့ကိုမှ တိုက်ရိုက် မထိတတ်ဘူး။",
+    "blogLink": false,
+    "followCta": false,
+    "image": "2026-11/2026-11-17-know-your-customer.jpg",
+    "metricoolUuid": "8312785492985268520",
+    "status": "scheduled",
+    "source": {
+      "title": "How to Create a Customer Persona in 5 Steps (+ Free Template)",
+      "publisher": "Fit Small Business (Bianca Caballero, May 2024)",
+      "url": "https://fitsmallbusiness.com/customer-persona-template/"
+    }
+  },
+  {
+    "date": "2026-11-18",
+    "timeMMT": "19:35",
+    "format": "book / talk idea",
+    "template": "beforeafter",
+    "theme": "cream",
+    "size": "portrait",
+    "topic": "brand messaging: customer is the hero, brand is the guide (StoryBrand)",
+    "firstLine": "Page ရဲ့ About မှာ၊ Post တွေမှာ \"ကျွန်တော်တို့ ဆိုင်က…\" နဲ့ စတာ များနေရင် ဒီ Post ကို ဆက်ဖတ်ကြည့်ပါ။",
+    "blogLink": false,
+    "followCta": false,
+    "image": "2026-11/2026-11-18-customer-is-hero.jpg",
+    "metricoolUuid": "8722138970397099869",
+    "status": "scheduled",
+    "source": {
+      "title": "Building a StoryBrand (Donald Miller, 2017) — via Graham Mann book notes",
+      "publisher": "Donald Miller (book)",
+      "url": "https://grahammann.net/book-notes/building-a-storybrand-donald-miller"
+    }
+  },
+  {
+    "date": "2026-11-20",
+    "timeMMT": "12:05",
+    "format": "myth vs fact",
+    "template": "mythfact",
+    "theme": "white",
+    "size": "square",
+    "topic": "content: behind-the-scenes posts build trust (offline shop example)",
+    "firstLine": "Studio မှာ ရိုက်ထားသလို ပုံလှလှတွေ မရှိလို့ Page မှာ မတင်ရဲဘူး ဆိုရင် — အဲ့ဒါက တင်စရာ အကောင်းဆုံး အရာကို လက်လွတ်နေတာ ဖြစ်နိုင်တယ်။",
+    "blogLink": false,
+    "followCta": false,
+    "image": "2026-11/2026-11-20-behind-the-scenes.jpg",
+    "metricoolUuid": "1502540483088502702",
+    "status": "scheduled",
+    "source": {
+      "title": "10 behind-the-scenes content ideas for your next campaign",
+      "publisher": "Sprout Social (Jamia Kenan, updated Feb 2025)",
+      "url": "https://sproutsocial.com/insights/behind-the-scenes-content/"
+    }
+  },
+  {
+    "date": "2026-11-21",
+    "timeMMT": "20:20",
+    "format": "how-to steps",
+    "template": "statement+steps",
+    "theme": "navy",
+    "size": "portrait",
+    "topic": "growth: simple double-sided referral programme for small shops",
+    "firstLine": "\"ဟိုဆိုင် ကောင်းတယ်\" — သူငယ်ချင်း၊ ဆွေမျိုး၊ အိမ်နီးချင်း တစ်ယောက်ရဲ့ ဒီစကားတစ်ခွန်းကို လူတွေက ကြော်ငြာထက် ပိုယုံတတ်ကြတယ်။ ဒါပေမဲ့ ဆိုင်ရှင် အများစုက ဒါကို ကံကောင်းလို့ ဖြစ်လာတာလို့ပဲ သဘောထားပြီး စနစ်တကျ မလုပ်ကြဘူး။",
+    "blogLink": false,
+    "followCta": true,
+    "image": "2026-11/2026-11-21-referral-1.jpg",
+    "images": [
+      "2026-11/2026-11-21-referral-1.jpg",
+      "2026-11/2026-11-21-referral-2.jpg"
+    ],
+    "metricoolUuid": "8305799280929230570",
+    "status": "scheduled",
+    "source": {
+      "title": "12 Proven Referral Program Ideas To Drive Growth in 2026",
+      "publisher": "Shopify blog (Shopify Staff, Jun 2025)",
+      "url": "https://www.shopify.com/blog/referral-program"
+    }
   }
 ]
