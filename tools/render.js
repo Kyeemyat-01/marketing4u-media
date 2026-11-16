@@ -127,7 +127,7 @@ window.fit=()=>{s=38;c.style.fontSize=s+'px';while(over()&&s>16){s-=0.5;c.style.
 }
 
 async function render(specs, outFn){
-  const b = await chromium.launch(); const results=[];
+  const b = await chromium.launch().catch(() => chromium.launch({executablePath: '/opt/pw-browsers/chromium'})); const results=[];  // fall back to the preinstalled browser if versions differ
   for (const [i,spec] of specs.entries()){
     const [W,H] = SIZES[spec.size]||SIZES.portrait;
     const p = await b.newPage({viewport:{width:W,height:H},deviceScaleFactor:Math.min(2,2048/Math.max(W,H))});  // Facebook max 2048px
