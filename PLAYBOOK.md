@@ -87,25 +87,53 @@ cover image + one image per step, same theme across the set) for deeper how-to a
 money posts. Render each image as its own spec (`name` …-1, …-2), and pass all their
 raw URLs, in order, in Metricool's `media` list.
 
-**Design (owner's decision, 2026-11-21: the Page should look fresh, not one repeated look).**
-Every spec sets a `style` and a `theme`:
+**Design (owner's decision, 2026-11-21): the look changes every 2 weeks.** The current
+design set lives in `tools/design.json` (`activeStyles`, `activeThemes`). Every spec sets a
+`style` and a `theme` from that set; if today is on or after `nextRefreshOnOrAfter`, do the
+**design refresh** below first.
+
+Styles built so far (code: the `STY` map in `tools/render.js`):
 
 | style | look | best with |
 |---|---|---|
 | `card` | content on a raised rounded card over a dotted colour background | checklist, steps, versus, chat, tip |
 | `editorial` | magazine page: serif type, ruled header (`section` = small header text), left aligned | quote, tip, statement, note, book/talk ideas |
 | `marker` | graph-paper background, hard-shadow boxes, highlighter marks | mythfact, beforeafter, checklist, versus |
-| `bold` | dark-ish, big faded `ghost` character behind (a number, `?` or `!`), side bar | statement, tip (set `ghost` = tip number), quote |
-| `classic` | the original look (navy/orange/cream/white) | anything — **at most 1 post a week** |
+| `bold` | big faded `ghost` character behind (a number, `?` or `!`), side bar | statement, tip (set `ghost` = tip number), quote |
+| `classic` | the original look | anything |
 
-Themes: `forest`, `plum`, `charcoal`, `sky`, `mint`, `sand` (new) and `navy`, `orange`,
-`cream`, `white` (original). Light themes (`sky`, `mint`, `sand`, `cream`, `white`) suit
-`editorial` and `marker`; dark ones (`charcoal`, `forest`, `plum`, `navy`) suit `bold`;
-`card` works with all.
+Themes are in `THEMES` in `tools/render.js`. Light themes suit `editorial`/`marker`, dark
+ones suit `bold`, `card` works with all.
 
-Rules: never the same `style` two posts in a row, and never the same `theme` two posts in a
-row; each week use all four new styles, and at least 5 different themes. Check the last 3
-log entries before choosing. A multi-image set keeps one style+theme across its images.
+Rules within a fortnight: never the same `style` two posts in a row, never the same `theme`
+two posts in a row (check the last 3 log entries); use every active style each week and at
+least 4 different active themes; `classic` at most 1 post a week. A multi-image set keeps one
+style+theme across its images.
+
+### Design refresh every 2 weeks
+
+When today ≥ `nextRefreshOnOrAfter`:
+1. **Build 2 brand-new styles** in the `STY` map and **2 brand-new themes** in `THEMES`.
+   Each must look clearly different from every style in `design.json` `history` — a new
+   layout idea, not a recolour. Ideas to draw from (pick ones not yet built): split
+   layout (colour block top/side + text), polaroid/photo-frame, receipt/ticket, newspaper
+   column, sticky notes on a board, chalkboard, big index number + rule (report page),
+   speech-bubble poster, gradient mesh with glass card, stamp/badge seal, timeline strip,
+   tabbed folder, phone-screen mockup (generic, no real app branding), duotone stripes.
+   Keep every style working with all templates, Burmese line breaks (`.w` spans), the
+   `fit()` auto-shrink, and the `Marketing 4U` brand line. Use only fonts in
+   `tools/fonts` (add new ones from npm `@fontsource/*` if needed). No other brands'
+   logos or designs.
+2. Render one sample per new style (a realistic marketing post each, portrait and square)
+   plus 2 old templates with each, **open every image with Read** and fix until clean.
+3. Set the new active set: `activeStyles` = the 2 new styles + 2 styles that were NOT
+   active last fortnight (from `history`; `classic` allowed); `activeThemes` = the 2 new
+   themes + 3–4 themes not active last fortnight. Set `activeSince` = today,
+   `nextRefreshOnOrAfter` = today + 14 days, append to `history`, update the table above
+   and `tools/README.md`. Commit and push before rendering the week's posts.
+4. In the Telegram report, send one contact-sheet image of the new samples first, captioned
+   "🎨 ဒီ ၂ ပတ်အတွက် ပုံစံအသစ်".
+
 Mix `portrait` (most) and `square` (1–2 per week). Highlight only 1–2 phrases with `*…*`.
 
 **Page identity (owner's decision, 2026-11-05): Marketing 4U is a MARKETING page, not a

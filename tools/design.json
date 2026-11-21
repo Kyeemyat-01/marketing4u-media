@@ -1,0 +1,50 @@
+{
+ "note": "Active design set for posts. The weekly run reads this; see PLAYBOOK 'Design refresh every 2 weeks'.",
+ "activeSince": "2026-11-28",
+ "nextRefreshOnOrAfter": "2026-12-12",
+ "activeStyles": [
+  "card",
+  "editorial",
+  "marker",
+  "bold"
+ ],
+ "activeThemes": [
+  "forest",
+  "plum",
+  "charcoal",
+  "sky",
+  "mint",
+  "sand"
+ ],
+ "history": [
+  {
+   "since": "2026-10-24",
+   "styles": [
+    "classic"
+   ],
+   "themes": [
+    "navy",
+    "orange",
+    "cream",
+    "white"
+   ]
+  },
+  {
+   "since": "2026-11-28",
+   "styles": [
+    "card",
+    "editorial",
+    "marker",
+    "bold"
+   ],
+   "themes": [
+    "forest",
+    "plum",
+    "charcoal",
+    "sky",
+    "mint",
+    "sand"
+   ]
+  }
+ ]
+}
