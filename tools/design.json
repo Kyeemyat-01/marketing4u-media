@@ -1,7 +1,7 @@
 {
  "note": "Active design set for posts. The weekly run reads this; see PLAYBOOK 'Design refresh every 2 weeks'.",
- "activeSince": "2026-11-28",
- "nextRefreshOnOrAfter": "2026-12-12",
+ "activeSince": "2026-11-21",
+ "nextRefreshOnOrAfter": "2026-12-05",
  "activeStyles": [
   "card",
   "editorial",
@@ -30,7 +30,7 @@
    ]
   },
   {
-   "since": "2026-11-28",
+   "since": "2026-11-21",
    "styles": [
     "card",
     "editorial",
