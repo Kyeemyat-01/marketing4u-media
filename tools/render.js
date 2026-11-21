@@ -10,6 +10,12 @@ const THEMES = {
   navy:   { bg:'#0E1B3D', bg2:'#13254F', panel:'rgba(255,255,255,.07)', line:'rgba(255,255,255,.14)', text:'#FFFFFF', body:'#D6DBE8', muted:'#9AA6C4', accent:'#FF7A1A', onAccent:'#0E1B3D', bad:'#FF9C94', good:'#6EE7B7', badBg:'rgba(255,90,78,.12)', goodBg:'rgba(61,220,151,.11)' },
   orange: { bg:'#FF7A1A', bg2:'#FF8C3A', panel:'rgba(14,27,61,.10)', line:'rgba(14,27,61,.18)', text:'#0E1B3D', body:'#1B2647', muted:'#5B3A1E', accent:'#0E1B3D', onAccent:'#FFFFFF', bad:'#8E1B10', good:'#0B5B3E', badBg:'rgba(255,255,255,.35)', goodBg:'rgba(255,255,255,.55)' },
   cream:  { bg:'#FFF4E8', bg2:'#FFE9D3', panel:'#FFFFFF', line:'rgba(14,27,61,.10)', text:'#0E1B3D', body:'#2C3655', muted:'#7A8199', accent:'#FF7A1A', onAccent:'#FFFFFF', bad:'#C8321F', good:'#11845B', badBg:'#FFE4DF', goodBg:'#DDF5EA' },
+  forest: { bg:'#0F3D2E', bg2:'#14503C', panel:'rgba(255,255,255,.08)', line:'rgba(255,255,255,.16)', text:'#FFFFFF', body:'#D5E6DD', muted:'#9CC2B0', accent:'#F2C14E', onAccent:'#0F3D2E', bad:'#FFA69B', good:'#9BE7C4', badBg:'rgba(255,120,100,.13)', goodBg:'rgba(120,230,180,.12)' },
+  plum:   { bg:'#2B1740', bg2:'#3A1F56', panel:'rgba(255,255,255,.08)', line:'rgba(255,255,255,.16)', text:'#FFFFFF', body:'#E4D9F0', muted:'#B9A6CF', accent:'#FF8FAB', onAccent:'#2B1740', bad:'#FFA0A0', good:'#9EEBC8', badBg:'rgba(255,110,110,.13)', goodBg:'rgba(120,230,180,.12)' },
+  charcoal:{ bg:'#17181C', bg2:'#22242A', panel:'rgba(255,255,255,.07)', line:'rgba(255,255,255,.14)', text:'#FFFFFF', body:'#D3D5DB', muted:'#9A9EA8', accent:'#C6F432', onAccent:'#17181C', bad:'#FF9C94', good:'#C6F432', badBg:'rgba(255,90,78,.12)', goodBg:'rgba(198,244,50,.10)' },
+  sky:    { bg:'#E6F0FF', bg2:'#D6E6FF', panel:'#FFFFFF', line:'rgba(11,37,69,.12)', text:'#0B2545', body:'#25406A', muted:'#5D7396', accent:'#1F5FD6', onAccent:'#FFFFFF', bad:'#C8321F', good:'#11845B', badBg:'#FDE8E5', goodBg:'#E1F5EC' },
+  mint:   { bg:'#E6F6EE', bg2:'#D3EFE1', panel:'#FFFFFF', line:'rgba(14,59,46,.12)', text:'#0E3B2E', body:'#235243', muted:'#5E8072', accent:'#0F8A5F', onAccent:'#FFFFFF', bad:'#C8321F', good:'#0F8A5F', badBg:'#FDE8E5', goodBg:'#D7F2E4' },
+  sand:   { bg:'#F4EADC', bg2:'#EADBC6', panel:'#FFFBF4', line:'rgba(60,35,20,.14)', text:'#2A1A12', body:'#4A3426', muted:'#8A6F5C', accent:'#B5452B', onAccent:'#FFFFFF', bad:'#B5452B', good:'#2F7A4B', badBg:'#F8DCD3', goodBg:'#DCEFDF' },
   white:  { bg:'#F4F6FB', bg2:'#E8EDF7', panel:'#FFFFFF', line:'rgba(14,27,61,.10)', text:'#0E1B3D', body:'#2C3655', muted:'#7A8199', accent:'#0E1B3D', onAccent:'#FFFFFF', bad:'#C8321F', good:'#11845B', badBg:'#FDE8E5', goodBg:'#E1F5EC', hi:'#FF7A1A' },
 };
 const SIZES = { portrait:[1080,1350], square:[1080,1080] };
@@ -76,11 +82,57 @@ function page(spec){
   const th = THEMES[spec.theme] || THEMES.navy; const [W,H] = SIZES[spec.size] || SIZES.portrait;
   const hi = th.hi || th.accent;
   const body = (T[spec.template]||T.statement)(spec);
+  const st = spec.style || 'classic'; const sq = spec.size==='square';
+  const light = ['cream','white','sky','mint','sand'].includes(spec.theme);
+  const STY = {
+    classic: '',
+    // content sits on a raised card over a dotted accent background
+    card: `#r{background:${th.accent};background-image:radial-gradient(${th.onAccent}22 3px,transparent 3.5px);background-size:44px 44px;padding:${sq?'64px 60px 118px':'78px 60px 128px'}}
+      .c{background:${th.bg};border-radius:40px;padding:${sq?'56px 60px':'70px 64px'};box-shadow:0 26px 60px rgba(0,0,0,.28)}
+      .brand{color:${th.onAccent}}.brand b{color:${th.onAccent}}.deco{display:none}`,
+    // magazine page: serif type, rules, left aligned, small caps header
+    editorial: `#r{background:${light?th.bg:th.bg};font-family:NSerM,DMS,NSM,serif;padding:${sq?'150px 90px 150px':'190px 96px 170px'}}
+      .h{font-family:DMS,NSerM,serif;font-weight:900;letter-spacing:.005em}.h .w{font-family:NSerM,DMS,serif}
+      .p{font-family:NSerM,NSM,serif}
+      em{color:${hi};background:linear-gradient(transparent 82%,${hi}55 82%)}
+      .chip{background:none;color:${hi};padding:0;border-radius:0;font-family:NSM;letter-spacing:.04em;border-bottom:3px solid ${hi}}
+      .chip em{color:${hi}}
+      .ck,.opt,.box{background:none;border-radius:0;border:0;border-top:2px solid ${th.line};padding-left:0;padding-right:0}
+      .box.bad,.box.good{border:0;border-top:3px solid currentColor;background:none}.box.bad{color:${th.bad}}.box.good{color:${th.good}}
+      .num,.ab,.sn{border-radius:0;background:none;color:${hi};font-family:DMS;font-size:1.6em;width:auto;height:auto;justify-content:flex-start}
+      .mast{position:absolute;left:${sq?90:96}px;right:${sq?90:96}px;top:${sq?64:80}px;display:flex;justify-content:space-between;align-items:flex-end;border-bottom:3px solid ${th.text};padding-bottom:16px;font-family:DMS,NSerM,serif;font-size:40px;color:${th.text}}
+      .mast span{font-family:NSM;font-size:24px;color:${th.muted};letter-spacing:.06em}
+      .brand{border-top:2px solid ${th.line};right:${sq?90:96}px;padding-top:14px;font-family:DMS}.deco{display:none}`,
+    // neo-brutal: graph paper, hard shadows, highlighter marks
+    marker: `#r{background-color:${th.bg};background-image:linear-gradient(${th.line} 1.5px,transparent 1.5px),linear-gradient(90deg,${th.line} 1.5px,transparent 1.5px);background-size:54px 54px}
+      em{color:${th.text};background:linear-gradient(104deg,transparent 2%,${hi}${light?'66':'AA'} 4%,${hi}${light?'55':'99'} 96%,transparent 98%);padding:0 .12em;border-radius:.2em}
+      .chip{transform:rotate(-2.5deg);border:3px solid ${th.text};box-shadow:6px 6px 0 ${th.text};border-radius:.3em}
+      .ck,.opt,.box,.them,.paper{border:3px solid ${th.text};box-shadow:8px 8px 0 ${th.text};border-radius:.45em;background:${light?'#FFFFFF':th.bg2}}
+      .box.bad{background:${th.badBg};border-color:${th.text}}.box.good{background:${th.goodBg};border-color:${th.text}}
+      .me{border:3px solid ${th.text};box-shadow:8px 8px 0 ${th.text}}
+      .num,.ab,.sn{border:3px solid ${th.text};border-radius:.3em}
+      .deco{display:none}`,
+    // big ghost character behind, accent bar on the left, square corners
+    bold: `#r{background:${th.bg};padding-left:${sq?110:116}px}
+      #r:before{content:'';position:absolute;left:0;top:0;bottom:0;width:26px;background:${hi}}
+      .ghost{position:absolute;right:-30px;bottom:-120px;font-family:AB;font-size:${sq?620:720}px;line-height:1;color:${hi};opacity:.09;pointer-events:none}
+      .h{letter-spacing:-.005em}
+      .chip,.ck,.opt,.box,.bub,.num,.ab,.sn,.cb{border-radius:0}
+      .chip{background:${th.text};color:${th.bg}}.chip em{color:${th.bg}}
+      .brand{left:${sq?110:116}px}.deco{display:none}`,
+  };
+  const extra = (STY[st]||'') ;
+  const mast = st==='editorial' ? `<div class="mast">Marketing 4U<span>${esc(spec.section||'BUSINESS GROWTH NOTES')}</span></div>` : '';
+  const ghost = st==='bold' ? `<div class="ghost">${esc(spec.ghost || spec.number || (spec.template==='mythfact'||spec.template==='versus'?'?':spec.template==='quote'?'“':'!'))}</div>` : '';
   return `<!doctype html><html><head><meta charset="utf-8"><style>
 @font-face{font-family:NSM;font-weight:400;src:url(${f('noto-sans-myanmar-myanmar-400-normal.woff2')})}
 @font-face{font-family:NSM;font-weight:600;src:url(${f('noto-sans-myanmar-myanmar-600-normal.woff2')})}
 @font-face{font-family:NSM;font-weight:800;src:url(${f('noto-sans-myanmar-myanmar-800-normal.woff2')})}
 @font-face{font-family:AB;src:url(${f('archivo-black-latin-400-normal.woff2')})}
+@font-face{font-family:NSerM;font-weight:400;src:url(${f('noto-serif-myanmar-myanmar-400-normal.woff2')})}
+@font-face{font-family:NSerM;font-weight:600 700;src:url(${f('noto-serif-myanmar-myanmar-700-normal.woff2')})}
+@font-face{font-family:NSerM;font-weight:800 900;src:url(${f('noto-serif-myanmar-myanmar-900-normal.woff2')})}
+@font-face{font-family:DMS;src:url(${f('dm-serif-display-latin-400-normal.woff2')})}
 *{box-sizing:border-box}body{margin:0}
 #r{position:relative;width:${W}px;height:${H}px;overflow:hidden;background:${spec.template==='quote'||spec.template==='statement'?th.bg:`linear-gradient(160deg,${th.bg} 0%,${th.bg} 70%,${th.bg2} 100%)`};color:${th.text};font-family:NSM,AB,sans-serif;word-break:keep-all;overflow-wrap:break-word;padding:${spec.size==='square'?'80px 84px 120px':'100px 90px 140px'}}
 .c{height:100%;display:flex;flex-direction:column;justify-content:${spec.align==='top'?'flex-start':'center'};gap:.95em;font-size:38px}
@@ -118,10 +170,14 @@ em{font-style:normal;color:${hi}}
 .tape{position:absolute;top:-.6em;left:50%;width:5em;height:1.3em;margin-left:-2.5em;background:rgba(255,122,26,.75);transform:rotate(2deg)}
 .brand{position:absolute;left:${spec.size==='square'?84:90}px;bottom:${spec.size==='square'?48:56}px;font-family:AB;font-size:30px;color:${th.muted}}.brand b{color:${hi};font-weight:400}
 .deco{position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;border:60px solid ${hi};opacity:.08}
-</style></head><body><div id="r">${spec.deco===false?'':'<div class="deco"></div>'}<div class="c">${body}</div><div class="brand">Marketing <b>4U</b></div></div>
+${extra}
+</style></head><body><div id="r">${ghost}${mast}${spec.deco===false?'':'<div class="deco"></div>'}<div class="c">${body}</div><div class="brand">Marketing <b>4U</b></div></div>
 <script>
 const c=document.querySelector('.c');let s=38;
-function over(){return c.scrollHeight>c.clientHeight+2||[...c.querySelectorAll('*')].some(e=>e.scrollWidth>e.clientWidth+2&&getComputedStyle(e).overflow!=='visible'&&false)}
+function over(){const r=c.getBoundingClientRect(),cs=getComputedStyle(c),k=[...c.children];if(!k.length)return false;
+  const top=r.top+parseFloat(cs.paddingTop),bot=r.bottom-parseFloat(cs.paddingBottom),right=r.right-parseFloat(cs.paddingRight);
+  return c.scrollHeight>c.clientHeight+2||c.scrollWidth>c.clientWidth+2||k[0].getBoundingClientRect().top<top-2||k[k.length-1].getBoundingClientRect().bottom>bot+2
+    ||[...c.querySelectorAll('.w')].some(e=>e.getBoundingClientRect().right>right+2)}
 window.fit=()=>{s=38;c.style.fontSize=s+'px';while(over()&&s>16){s-=0.5;c.style.fontSize=s+'px'}return s};
 </script></body></html>`;
 }

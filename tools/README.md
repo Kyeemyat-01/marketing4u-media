@@ -18,7 +18,12 @@ Text markup: `*words*` = highlight colour, `\n` = line break. A line may break r
 spaces, so put a space between Burmese phrases (as normal writing does). Avoid emoji
 inside images except ✅ ❌ 👇.
 
-Themes: `navy` (dark), `orange`, `cream` (light warm), `white` (light cool).
+Themes: `navy` (dark), `orange`, `cream` (light warm), `white` (light cool), plus `forest`,
+`plum`, `charcoal` (dark) and `sky`, `mint`, `sand` (light).
+
+Styles (`style` field, default `classic`): `card`, `editorial` (optional `section` header
+text), `marker`, `bold` (optional `ghost` = big faded character, defaults to `number`,
+`?` or `!`). Any template works with any style.
 
 | template | fields |
 |---|---|

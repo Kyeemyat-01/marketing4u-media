@@ -87,9 +87,26 @@ cover image + one image per step, same theme across the set) for deeper how-to a
 money posts. Render each image as its own spec (`name` …-1, …-2), and pass all their
 raw URLs, in order, in Metricool's `media` list.
 
-**Design**: never the same `theme` two posts in a row; use all four themes across a
-week; mix `portrait` (most) and `square` (1–2 per week). Highlight only 1–2 phrases
-with `*…*`.
+**Design (owner's decision, 2026-11-21: the Page should look fresh, not one repeated look).**
+Every spec sets a `style` and a `theme`:
+
+| style | look | best with |
+|---|---|---|
+| `card` | content on a raised rounded card over a dotted colour background | checklist, steps, versus, chat, tip |
+| `editorial` | magazine page: serif type, ruled header (`section` = small header text), left aligned | quote, tip, statement, note, book/talk ideas |
+| `marker` | graph-paper background, hard-shadow boxes, highlighter marks | mythfact, beforeafter, checklist, versus |
+| `bold` | dark-ish, big faded `ghost` character behind (a number, `?` or `!`), side bar | statement, tip (set `ghost` = tip number), quote |
+| `classic` | the original look (navy/orange/cream/white) | anything — **at most 1 post a week** |
+
+Themes: `forest`, `plum`, `charcoal`, `sky`, `mint`, `sand` (new) and `navy`, `orange`,
+`cream`, `white` (original). Light themes (`sky`, `mint`, `sand`, `cream`, `white`) suit
+`editorial` and `marker`; dark ones (`charcoal`, `forest`, `plum`, `navy`) suit `bold`;
+`card` works with all.
+
+Rules: never the same `style` two posts in a row, and never the same `theme` two posts in a
+row; each week use all four new styles, and at least 5 different themes. Check the last 3
+log entries before choosing. A multi-image set keeps one style+theme across its images.
+Mix `portrait` (most) and `square` (1–2 per week). Highlight only 1–2 phrases with `*…*`.
 
 **Page identity (owner's decision, 2026-11-05): Marketing 4U is a MARKETING page, not a
 sales-tricks page.** Its job is to teach business owners how to *grow a business through
@@ -264,7 +281,7 @@ Existing blog articles (for the weekly blog pointer):
 ## 6. Log and report
 
 1. Append one entry per scheduled post to `posts/log.json`:
-   `{"date":"YYYY-MM-DD","timeMMT":"HH:MM","format":"…","template":"…","theme":"…","size":"…",
+   `{"date":"YYYY-MM-DD","timeMMT":"HH:MM","format":"…","template":"…","style":"…","theme":"…","size":"…",
    "topic":"short English topic","firstLine":"caption first line","blogLink":true|false,
    "followCta":true|false,"image":"YYYY-MM/<name>.jpg","metricoolUuid":"…","status":"draft"|"scheduled","source":{…}|null}`
    Commit and push.
