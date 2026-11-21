@@ -474,5 +474,114 @@
       "publisher": "Shopify blog (Shopify Staff, Jun 2025)",
       "url": "https://www.shopify.com/blog/referral-program"
     }
+  },
+  {
+    "date": "2026-11-23",
+    "timeMMT": "12:15",
+    "format": "single tip",
+    "template": "tip",
+    "style": "editorial",
+    "theme": "sand",
+    "size": "portrait",
+    "topic": "marketing fundamentals: simple competitor analysis — study 3 rivals like a customer, find what they don't do",
+    "firstLine": "ဘေးဆိုင်က ဈေးချလိုက်တိုင်း ကိုယ်ပါ လိုက်ချနေရရင် — အဲ့ဒါ ပြိုင်ဘက်ကို လေ့လာနေတာ မဟုတ်ဘဲ ပြိုင်ဘက်နောက်ကို လိုက်နေတာပါ။",
+    "blogLink": false,
+    "followCta": false,
+    "image": "2026-11/2026-11-23-competitor-check.jpg",
+    "metricoolUuid": "5809973691572438527",
+    "status": "scheduled",
+    "source": {
+      "title": "What is competitive analysis? How to outrank your competition (step by step)",
+      "publisher": "HubSpot (Christine White, updated Jan 2026)",
+      "url": "https://blog.hubspot.com/marketing/competitive-analysis-kit"
+    }
+  },
+  {
+    "date": "2026-11-24",
+    "timeMMT": "19:25",
+    "format": "before → after",
+    "template": "beforeafter",
+    "style": "marker",
+    "theme": "mint",
+    "size": "portrait",
+    "topic": "brand building: consistent brand voice across Page, inbox and shop (voice vs tone)",
+    "firstLine": "Page ပေါ်မှာ \"ညီမလေးတို့ရေ\" နဲ့ ချိုချိုသာသာ ရေးတဲ့ ဆိုင်က Inbox ထဲ ရောက်တော့ \"25000။ Deli ခ သပ်သပ်\" ဆိုပြီး တိုတိုပြတ်ပြတ် ပြန်ဖြေတယ် — Customer အတွက်တော့ ဆိုင်နှစ်ဆိုင်နဲ့ စကားပြောနေရသလိုပဲ။",
+    "blogLink": false,
+    "followCta": false,
+    "image": "2026-11/2026-11-24-one-brand-voice.jpg",
+    "metricoolUuid": "-8871752260520951639",
+    "status": "scheduled",
+    "source": {
+      "title": "Brand voice: What it is and why it matters",
+      "publisher": "Sprout Social (Jamia Kenan, 2023)",
+      "url": "https://sproutsocial.com/insights/brand-voice/"
+    }
+  },
+  {
+    "date": "2026-11-26",
+    "timeMMT": "12:45",
+    "format": "book / talk idea",
+    "template": "versus",
+    "style": "card",
+    "theme": "plum",
+    "size": "square",
+    "topic": "loyalty: endowed progress effect — pre-stamped loyalty cards (offline example)",
+    "firstLine": "A လား B လား — အဖြေ မဖတ်ခင် Comment မှာ အရင် ရွေးခဲ့ပါဦး 👇",
+    "blogLink": false,
+    "followCta": false,
+    "image": "2026-11/2026-11-26-stamp-card-head-start.jpg",
+    "metricoolUuid": "8893011902267475799",
+    "status": "scheduled",
+    "source": {
+      "title": "The Endowed Progress Effect: How Artificial Advancement Increases Effort (Journal of Consumer Research 32(4), 2006)",
+      "publisher": "Joseph C. Nunes & Xavier Drèze (classic study)",
+      "url": "https://econpapers.repec.org/RePEc:oup:jconrs:v:32:y:2006:i:4:p:504-512"
+    }
+  },
+  {
+    "date": "2026-11-27",
+    "timeMMT": "19:10",
+    "format": "one-line truth",
+    "template": "statement",
+    "style": "bold",
+    "theme": "charcoal",
+    "size": "portrait",
+    "topic": "measuring: test one change at a time (simple A/B test with organic posts)",
+    "firstLine": "Post တစ်ခု ကောင်းကောင်း သွားတယ်၊ နောက်တစ်ခု မသွားဘူး — ဘာကြောင့်လဲ မေးရင် ဆိုင်ရှင် အများစု \"ကံ\" လို့ပဲ ဖြေကြတယ်။",
+    "blogLink": false,
+    "followCta": false,
+    "image": "2026-11/2026-11-27-change-one-thing.jpg",
+    "metricoolUuid": "2452591726553354186",
+    "status": "scheduled",
+    "source": {
+      "title": "A/B Testing on Facebook: How to Do It Right",
+      "publisher": "HubSpot (Kayla Carmicheal, updated Jul 2025)",
+      "url": "https://blog.hubspot.com/blog/tabid/6307/bid/30893/How-to-Split-Test-Your-Facebook-Ads-to-Maximize-Conversions.aspx"
+    }
+  },
+  {
+    "date": "2026-11-29",
+    "timeMMT": "12:35",
+    "format": "how-to steps",
+    "template": "steps+checklist",
+    "style": "card",
+    "theme": "sky",
+    "size": "portrait",
+    "topic": "content: plan December with a simple content calendar (4 steps + what to track)",
+    "firstLine": "ညတိုင်း \"မနက်ဖြန် ဘာတင်ရမလဲ\" လို့ တွေးရတာ ပင်ပန်းတယ် — ဒီဇင်ဘာလ ရောက်မှ မတွေးရအောင် ဒီတစ်ပတ်ထဲမှာ တစ်လစာ စီစဉ်ထားလိုက်ရအောင်။",
+    "blogLink": false,
+    "followCta": true,
+    "image": "2026-11/2026-11-29-december-calendar-1.jpg",
+    "images": [
+      "2026-11/2026-11-29-december-calendar-1.jpg",
+      "2026-11/2026-11-29-december-calendar-2.jpg"
+    ],
+    "metricoolUuid": "-7593083016992899056",
+    "status": "scheduled",
+    "source": {
+      "title": "How to create a social media calendar in 2026",
+      "publisher": "Hootsuite (Trish Riswick, Oct 2026)",
+      "url": "https://blog.hootsuite.com/social-media-calendar/"
+    }
   }
 ]
